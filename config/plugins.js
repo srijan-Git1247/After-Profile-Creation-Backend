@@ -12,5 +12,20 @@ module.exports = ({ env }) => ({
       delete: {},
     },
   },
+  email: {
+    provider: "sendgrid",
+    providerOptions: {
+      apiKey: env("SENDGRID_API_KEY"),
+    },
+    settings: {
+      defaultFrom: "srijan_201800150@smit.smu.edu.in",
+      defaultReplyTo: "srijan_201800150@smit.smu.edu.in",
+      testAddress: "srijan_201800150@smit.smu.edu.in",
+    },
+  },
+
+
+
+
   // ...
 });

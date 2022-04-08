@@ -62,6 +62,10 @@
     "events": {
       "via": "user",
       "collection": "events"
+    },
+    "blood_donation_camps": {
+      "via": "user",
+      "collection": "blood-donation-camps"
     }
   }
 }

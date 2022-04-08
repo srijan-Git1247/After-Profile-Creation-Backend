@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "events",
+  "collectionName": "blood_donation_camps",
   "info": {
-    "name": "request",
+    "name": "BloodDonationCamps",
     "description": ""
   },
   "options": {
@@ -12,30 +12,25 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "Name": {
       "type": "string"
     },
-    "slug": {
-      "type": "uid",
-      "targetField": "name"
-    },
-    "venue": {
+    "Address": {
       "type": "string"
     },
-    "address": {
+    "Date": {
+      "type": "date"
+    },
+    "Time": {
+      "type": "time"
+    },
+    "Description": {
       "type": "string"
     },
-    "date": {
-      "type": "datetime"
-    },
-    "time": {
-      "type": "string"
-    },
-    "units": {
-      "type": "string"
-    },
-    "description": {
-      "type": "richtext"
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "blood_donation_camps"
     },
     "image": {
       "model": "file",
@@ -49,16 +44,9 @@
       "required": false,
       "pluginOptions": {}
     },
-    "user": {
-      "plugin": "users-permissions",
-      "model": "user",
-      "via": "events"
-    },
-    "Phone": {
-      "type": "integer"
-    },
-    "BloodType": {
-      "type": "string"
+    "slug": {
+      "type": "uid",
+      "targetField": "Name"
     }
   }
 }
