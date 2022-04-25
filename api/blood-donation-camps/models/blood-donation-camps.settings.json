@@ -28,9 +28,9 @@
       "type": "string"
     },
     "user": {
+      "via": "blood_donation_camps",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "blood_donation_camps"
+      "model": "user"
     },
     "image": {
       "model": "file",

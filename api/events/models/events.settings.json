@@ -50,9 +50,9 @@
       "pluginOptions": {}
     },
     "user": {
+      "via": "events",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "events"
+      "model": "user"
     },
     "Phone": {
       "type": "integer"

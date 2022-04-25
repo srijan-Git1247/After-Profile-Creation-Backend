@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
  * Cron config that gives you an opportunity
@@ -11,11 +11,18 @@
  */
 
 module.exports = {
-  /**
-   * Simple example.
-   * Every monday at 1am.
-   */
-  // '0 1 * * 1': () => {
-  //
-  // }
+  "*/1 * * * *": async () => {
+    // Fetch data that have the `yourDateAttributeName_lt` lower than the now.
+    const data = await strapi.query("events").find({
+      date_lt: new Date(),
+      _limit: 100000,
+    });
+
+    // Delete all entries fetched.
+    data.forEach((entry) =>
+      strapi.query("events").delete({
+        id: entry.id,
+      })
+    );
+  },
 };

@@ -66,6 +66,12 @@
     "blood_donation_camps": {
       "via": "user",
       "collection": "blood-donation-camps"
+    },
+    "BloodType": {
+      "type": "string"
+    },
+    "Active": {
+      "type": "boolean"
     }
   }
 }
