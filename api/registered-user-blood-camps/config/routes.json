@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/registered-user-blood-camps",
+      "handler": "registered-user-blood-camps.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/registered-user-blood-camps/count",
+      "handler": "registered-user-blood-camps.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/registered-user-blood-camps/:id",
+      "handler": "registered-user-blood-camps.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/registered-user-blood-camps",
+      "handler": "registered-user-blood-camps.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/registered-user-blood-camps/:id",
+      "handler": "registered-user-blood-camps.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/registered-user-blood-camps/:id",
+      "handler": "registered-user-blood-camps.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

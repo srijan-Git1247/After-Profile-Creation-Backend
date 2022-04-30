@@ -27,11 +27,6 @@
     "Description": {
       "type": "string"
     },
-    "user": {
-      "via": "blood_donation_camps",
-      "plugin": "users-permissions",
-      "model": "user"
-    },
     "image": {
       "model": "file",
       "via": "related",
@@ -47,6 +42,9 @@
     "slug": {
       "type": "uid",
       "targetField": "Name"
+    },
+    "ContactNumber": {
+      "type": "biginteger"
     }
   }
 }

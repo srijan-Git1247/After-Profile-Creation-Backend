@@ -63,15 +63,29 @@
       "via": "user",
       "collection": "events"
     },
-    "blood_donation_camps": {
-      "via": "user",
-      "collection": "blood-donation-camps"
-    },
     "BloodType": {
       "type": "string"
     },
     "Active": {
       "type": "boolean"
+    },
+    "ProfilePicture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "requests": {
+      "collection": "events"
+    },
+    "PhoneNumber": {
+      "type": "biginteger"
     }
   }
 }

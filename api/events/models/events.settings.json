@@ -28,9 +28,6 @@
     "date": {
       "type": "datetime"
     },
-    "time": {
-      "type": "string"
-    },
     "units": {
       "type": "string"
     },

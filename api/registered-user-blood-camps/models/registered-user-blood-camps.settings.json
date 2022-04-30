@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "registered_user_blood_camps",
+  "info": {
+    "name": "RegisteredUserBloodCamps"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Contact": {
+      "type": "biginteger"
+    }
+  }
+}
